@@ -223,6 +223,7 @@ header .container {
 .hero__btn-look-icon {
   width: 24px;
   height: 24px;
+  margin-left: 12px;
 }
 
 .hero__counter {
@@ -234,6 +235,7 @@ header .container {
 
 .hero__right-side {
   position: relative;
+  display: flex;
 }
 
 .hero__link-look {
