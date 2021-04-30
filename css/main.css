@@ -191,12 +191,15 @@ header .container {
 
 .hero__btn-itemr {
   margin-right: 23px;
+  position: relative;
 }
 
 .hero__btn-itemr::after {
   content: "";
+  width: 271px;
+  position: absolute;
   border: 1px solid #F2F2F2;
-  transform: rotate(180deg);
+  bottom: 50%;
 }
 
 .hero__btn {
