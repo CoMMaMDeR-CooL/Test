@@ -1,0 +1,61 @@
+.hero {
+    &__left-side {
+        padding-top: 336px;
+
+    }
+   
+    &__suptitle {
+        font-weight: 300;
+font-size: 64px;
+line-height: 1.0;
+color: #BDBDBD;
+    }
+    &__title {
+        font-weight: bold;
+font-size: 64px;
+line-height: 1.0;
+color: #333333;
+    }
+    &__btn-list {
+        margin-top: 90px;
+        margin-bottom: 90px;
+        
+        display: flex;
+        align-items: center;
+        
+    }
+    &__btn-item {
+        margin-right: 23px;
+        
+    }
+    &__btn-itemr {
+        margin-right: 23px;
+        &::after {
+            content: "";
+            border: 1px solid #F2F2F2;
+            transform: rotate(180deg);
+        }
+    }
+    &__btn {
+        width: 53px;
+        height: 53px;
+        background-color: #fff;
+        border: 1px solid #F2F2F2;
+    }
+    
+    &__btn-icon {
+        width: 24px;
+        height: 24px;
+    }
+    &__btn-iconr {
+        width: 24px;
+        height: 24px;
+        transform: scale(-1, 1);
+    }
+    &__counter {
+        font-weight: normal;
+font-size: 24px;
+line-height: 1.0;
+color: #BDBDBD;
+    }
+}

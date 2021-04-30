@@ -1,5 +1,32 @@
+@font-face {
+  font-family: 'TT Hoves';
+  src: local("TT Hoves Bold"), local("TT-Hoves-Bold"), url("../fonts/TTHoves-Bold.woff2") format("woff2"), url("../fonts/TTHoves-Bold.woff") format("woff"), url("../fonts/TTHoves-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Hoves';
+  src: local("TT Hoves Light"), local("TT-Hoves-Light"), url("../fonts/TTHoves-Light.woff2") format("woff2"), url("../fonts/TTHoves-Light.woff") format("woff"), url("../fonts/TTHoves-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Hoves';
+  src: local("TT Hoves Regular"), local("TT-Hoves-Regular"), url("../fonts/TTHoves-Regular.woff2") format("woff2"), url("../fonts/TTHoves-Regular.woff") format("woff"), url("../fonts/TTHoves-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Hoves';
+  src: local("TT Hoves Medium"), local("TT-Hoves-Medium"), url("../fonts/TTHoves-Medium.woff2") format("woff2"), url("../fonts/TTHoves-Medium.woff") format("woff"), url("../fonts/TTHoves-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
-  font-family: var(--main-font);
   scroll-behavior: smooth;
 }
 
@@ -48,10 +75,14 @@ header .container {
   padding-bottom: 45px;
 }
 
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .nav__logo {
@@ -82,8 +113,25 @@ header .container {
   align-items: center;
 }
 
+.nav__item {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.0;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
 .nav__item:not(:last-child) {
   margin-right: 60px;
+}
+
+.nav__link {
+  color: #333333;
+}
+
+.nav__link:hover, .nav__link:focus {
+  color: #0e0f0e;
 }
 
 .active {
@@ -98,7 +146,7 @@ header .container {
   border-radius: 1px;
   background-color: #333333;
   transform: translate(-100%);
-  bottom: -20%;
+  bottom: -50%;
 }
 
 .active ::before {
@@ -109,6 +157,70 @@ header .container {
   border-radius: 1px;
   background-color: #333333;
   transform: translate(0%);
-  bottom: 120%;
+  bottom: 150%;
+}
+
+.hero__left-side {
+  padding-top: 336px;
+}
+
+.hero__suptitle {
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 1.0;
+  color: #BDBDBD;
+}
+
+.hero__title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1.0;
+  color: #333333;
+}
+
+.hero__btn-list {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__btn-item {
+  margin-right: 23px;
+}
+
+.hero__btn-itemr {
+  margin-right: 23px;
+}
+
+.hero__btn-itemr::after {
+  content: "";
+  border: 1px solid #F2F2F2;
+  transform: rotate(180deg);
+}
+
+.hero__btn {
+  width: 53px;
+  height: 53px;
+  background-color: #fff;
+  border: 1px solid #F2F2F2;
+}
+
+.hero__btn-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.hero__btn-iconr {
+  width: 24px;
+  height: 24px;
+  transform: scale(-1, 1);
+}
+
+.hero__counter {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.0;
+  color: #BDBDBD;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,7 @@
 .nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     &__logo {
         margin-right: 330px;
         position: relative;
@@ -31,14 +31,26 @@
     
     }
     &__item {
+        font-weight: normal;
+font-size: 12px;
+line-height: 1.0;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #333333;
         &:not(:last-child) {
             margin-right: 60px;
         }
         
     }
-    &__icon {
+    &__link {
+        color: #333333;
+        &:hover,
+        &:focus {
+            color: #0e0f0e;
+        }
        
     }
+   
 }
 .active {
     position: relative;
@@ -50,7 +62,7 @@
         border-radius: 1px;
         background-color: #333333;
         transform: translate(-100%);
-        bottom: -20%;
+        bottom: -50%;
 
     }
     ::before {
@@ -61,7 +73,7 @@
         border-radius: 1px;
         background-color: #333333;
         transform: translate(0%);
-        bottom: 120%;
+        bottom: 150%;
 
     }
 }
