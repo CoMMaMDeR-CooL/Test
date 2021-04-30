@@ -16,50 +16,86 @@ font-size: 64px;
 line-height: 1.0;
 color: #333333;
     }
-    &__btn-list {
-        margin-top: 90px;
-        margin-bottom: 90px;
         
-        display: flex;
-        align-items: center;
-        
-    }
-    &__btn-item {
-        margin-right: 23px;
-        
-    }
-    &__btn-itemr {
-        margin-right: 23px;
-        position: relative;
-        
-        &::after {
-            content: "";
-            width: 271px;
-            position: absolute;
-            border: 1px solid #F2F2F2;
-            bottom: 50%;
-        }
-    }
     &__btn {
         width: 53px;
         height: 53px;
         background-color: #fff;
         border: 1px solid #F2F2F2;
+        
+        &-itemr {
+            margin-right: 23px;
+            position: relative;
+            
+            &::after {
+                content: "";
+                width: 271px;
+                position: absolute;
+                border: 1px solid #F2F2F2;
+                bottom: 50%;
+            }
+        }
+        
+        &-item {
+            margin-right: 23px;
+            
+        }
+        
+        &-list {
+            margin-top: 90px;
+            margin-bottom: 90px;
+            
+            display: flex;
+            align-items: center;
+            
+        }
+        
+        &-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &-iconr {
+            width: 24px;
+            height: 24px;
+            transform: scale(-1, 1);
+        }
+        &-look-icon {
+            width: 24px;
+            height: 24px;
+        }
     }
     
-    &__btn-icon {
-        width: 24px;
-        height: 24px;
-    }
-    &__btn-iconr {
-        width: 24px;
-        height: 24px;
-        transform: scale(-1, 1);
-    }
+   
+    
     &__counter {
         font-weight: normal;
 font-size: 24px;
 line-height: 1.0;
 color: #BDBDBD;
+    }
+
+    &__right-side {
+        position: relative;
+
+    }
+    &__link-look {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.0;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+
+        color: #333333;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        width: 222px;
+        height: 71px;
+
     }
 }

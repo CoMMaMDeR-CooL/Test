@@ -178,15 +178,11 @@ header .container {
   color: #333333;
 }
 
-.hero__btn-list {
-  margin-top: 90px;
-  margin-bottom: 90px;
-  display: flex;
-  align-items: center;
-}
-
-.hero__btn-item {
-  margin-right: 23px;
+.hero__btn {
+  width: 53px;
+  height: 53px;
+  background-color: #fff;
+  border: 1px solid #F2F2F2;
 }
 
 .hero__btn-itemr {
@@ -202,11 +198,15 @@ header .container {
   bottom: 50%;
 }
 
-.hero__btn {
-  width: 53px;
-  height: 53px;
-  background-color: #fff;
-  border: 1px solid #F2F2F2;
+.hero__btn-item {
+  margin-right: 23px;
+}
+
+.hero__btn-list {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  display: flex;
+  align-items: center;
 }
 
 .hero__btn-icon {
@@ -220,10 +220,37 @@ header .container {
   transform: scale(-1, 1);
 }
 
+.hero__btn-look-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .hero__counter {
   font-weight: normal;
   font-size: 24px;
   line-height: 1.0;
   color: #BDBDBD;
+}
+
+.hero__right-side {
+  position: relative;
+}
+
+.hero__link-look {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.0;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #333333;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 222px;
+  height: 71px;
 }
 /*# sourceMappingURL=main.css.map */
