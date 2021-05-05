@@ -1,56 +1,65 @@
 .tasks {
-    &__title {
-        font-weight: 300;
-        font-size: 64px;
-        line-height: 1.0;
-        color: #BDBDBD;
-        margin-bottom: 60px;
-    }
-    &__list {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__item {
-        display: block;
-        
-        position: relative;
-        &:first-child {
-            // margin-right: 337px;
-            max-width: 280px;
-            &::before {
-                content: "1";
-                position: absolute;
-                transform: translate(-130%, -25%);
-                font-weight: 900;
-                font-size: 200px;
-                line-height: 239px;
-                align-items: center;
-                color: #F2F2F2;
+  margin-bottom: 120px;
+  &__title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 1;
+    color: #bdbdbd;
+    margin-bottom: 60px;
+  }
+  &__list {
+    display: flex;
+    // justify-content: space-between;
+  }
+  &__item {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: start;
 
-            }
-        }
-        &:last-child {
-            max-width: 427px;
-            &::before {
-                content: "2";
-                position: absolute;
-                transform: translate(-130%, -25%);
-                font-weight: 900;
-                font-size: 200px;
-                line-height: 239px;
-                align-items: center;
-                color: #F2F2F2;
+    position: relative;
+    &:first-child {
+      margin-left: 125px;
+      margin-right: 340px;
 
-            }
-
-        }
-        
+      width: 280px;
+      &::before {
+        content: "1";
+        position: absolute;
+        transform: translate(-130%, -25%);
+        font-weight: 900;
+        font-size: 200px;
+        line-height: 239px;
+        align-items: center;
+        color: #f2f2f2;
+      }
     }
-    &__text {
-        font-weight: normal;
+    &:last-child {
+      max-width: 427px;
+      &::before {
+        content: "2";
+        position: absolute;
+        transform: translate(-130%, -25%);
+        font-weight: 900;
+        font-size: 200px;
+        line-height: 239px;
+        align-items: center;
+        color: #f2f2f2;
+      }
+    }
+  }
+  //   &__item-number {
+  //     display: flex;
+  //     font-weight: 900;
+  //     font-size: 200px;
+  //     line-height: 1.19;
+  //     align-items: center;
+  //     color: #f2f2f2;
+  //     height: 140px;
+  //   }
+  &__text {
+    font-weight: normal;
     font-size: 22px;
     line-height: 1.64;
     color: #333333;
-
-    }
+  }
 }
