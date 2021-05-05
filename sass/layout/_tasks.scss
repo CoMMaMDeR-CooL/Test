@@ -1,0 +1,56 @@
+.tasks {
+    &__title {
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 1.0;
+        color: #BDBDBD;
+        margin-bottom: 60px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: block;
+        
+        position: relative;
+        &:first-child {
+            // margin-right: 337px;
+            max-width: 280px;
+            &::before {
+                content: "1";
+                position: absolute;
+                transform: translate(-130%, -25%);
+                font-weight: 900;
+                font-size: 200px;
+                line-height: 239px;
+                align-items: center;
+                color: #F2F2F2;
+
+            }
+        }
+        &:last-child {
+            max-width: 427px;
+            &::before {
+                content: "2";
+                position: absolute;
+                transform: translate(-130%, -25%);
+                font-weight: 900;
+                font-size: 200px;
+                line-height: 239px;
+                align-items: center;
+                color: #F2F2F2;
+
+            }
+
+        }
+        
+    }
+    &__text {
+        font-weight: normal;
+    font-size: 22px;
+    line-height: 1.64;
+    color: #333333;
+
+    }
+}

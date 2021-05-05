@@ -16,5 +16,7 @@
     .about & {
         display: flex;
         justify-content: space-around;
+        background: linear-gradient(to bottom, #FBFBFB 95%, #ffffff 20%);
+        padding-top: 30px;
     }
 }

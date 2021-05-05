@@ -83,6 +83,8 @@ header .container {
 .about .container {
   display: flex;
   justify-content: space-around;
+  background: linear-gradient(to bottom, #FBFBFB 95%, #ffffff 20%);
+  padding-top: 30px;
 }
 
 .nav {
@@ -366,8 +368,7 @@ header .container {
 }
 
 .about {
-  background: #FBFBFB;
-  padding-top: 30px;
+  margin-bottom: 120px;
 }
 
 .about__left-side {
@@ -430,5 +431,60 @@ header .container {
   background-color: #fff;
   width: 222px;
   height: 71px;
+}
+
+.tasks__title {
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 1.0;
+  color: #BDBDBD;
+  margin-bottom: 60px;
+}
+
+.tasks__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasks__item {
+  display: block;
+  position: relative;
+}
+
+.tasks__item:first-child {
+  max-width: 280px;
+}
+
+.tasks__item:first-child::before {
+  content: "1";
+  position: absolute;
+  transform: translate(-130%, -25%);
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 239px;
+  align-items: center;
+  color: #F2F2F2;
+}
+
+.tasks__item:last-child {
+  max-width: 427px;
+}
+
+.tasks__item:last-child::before {
+  content: "2";
+  position: absolute;
+  transform: translate(-130%, -25%);
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 239px;
+  align-items: center;
+  color: #F2F2F2;
+}
+
+.tasks__text {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.64;
+  color: #333333;
 }
 /*# sourceMappingURL=main.css.map */
