@@ -531,4 +531,40 @@ header .container {
   width: 24px;
   height: 24px;
 }
+
+.projects__read-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.projects__overlay {
+  position: relative;
+}
+
+.projects__overlay-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background: #333333;
+  opacity: 0.8;
+  font-size: 64px;
+  line-height: 1.0;
+  color: #FFFFFF;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate(50%, -50%);
+}
+
+.projects__overlay-link {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.0;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=main.css.map */
