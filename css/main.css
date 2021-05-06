@@ -525,6 +525,7 @@ header .container {
   font-size: 64px;
   line-height: 1;
   color: #bdbdbd;
+  margin-bottom: 60px;
 }
 
 .projects__overlay-icon {
@@ -539,14 +540,17 @@ header .container {
 
 .projects__overlay {
   position: relative;
+  width: 570px;
 }
 
 .projects__overlay-text {
+  padding: 48px 79px;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 570px;
   font-weight: bold;
   background: #333333;
   opacity: 0.8;
@@ -556,7 +560,7 @@ header .container {
   top: 0;
   left: 0;
   height: 100%;
-  transform: translate(50%, -50%);
+  transform: translate(0%, 0%);
 }
 
 .projects__overlay-link {
