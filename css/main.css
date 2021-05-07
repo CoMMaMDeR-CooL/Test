@@ -644,8 +644,8 @@ header .container {
 }
 
 .contact__wrapper {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  position: relative;
 }
 
 .contact__input {
@@ -663,9 +663,14 @@ header .container {
 }
 
 .contact__icon {
-  width: 24px;
-  height: 24px;
   position: absolute;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-40%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact__textarea {
