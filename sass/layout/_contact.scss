@@ -61,8 +61,8 @@
         &::before {
             content: "";
             display: block;
-            width: 16px;
-            height: 16px;
+            width: 20px;
+            height: 17px;
             border: 2px solid #212121;
             border-radius: 2px;
             cursor: pointer;
@@ -70,8 +70,8 @@
         }
     }
     &__form-term:checked + &__check-desc::before {
-        background: #BDBDBD;
-        background-image: url("../img/svg/chck.svg");
+        background: #ffffff;
+        background-image: url("../img/path.jpg");
         background-position: center;
         background-repeat: no-repeat;
         border-color: #333333;
