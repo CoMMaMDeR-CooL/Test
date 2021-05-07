@@ -283,20 +283,26 @@
                             
                          </li>
                      </ul>
-                     <a href="#" class="projects__read-link link">ВСЕ ПРОЕКТЫ 
-                         <svg class="projects__read-icon">
-                         <use href="./img/svg/icon.svg#icon-arr"></use>
-                     </svg>
-                    </a>
+                     <div class="projects__btn-block">
+                        <a href="#" class="projects__read-link link">ВСЕ ПРОЕКТЫ 
+                            <svg class="projects__read-icon">
+                            <use href="./img/svg/icon.svg#icon-arr"></use>
+                        </svg>
+                       </a>
+                     </div>
+                     
                  </div>
              </section>
              <!--END OF PROJECTS-->
 
              <!--CONTACT-->
              <section class="contact-us">
+                
                  <div class="container">
+                    <h2 class="contact__title">Связаться с нами</h2>
                      <div class="contact">
-                     <form action="#" class="contact-form">
+                     <div class="contact__left-side">
+                     <form action="#" class="contact__form">
                          <span class="contact__wrapper">
                              <input type="text" class="contact__input" placeholder="Имя*" required minlength="2">
                                  <svg class="contact__icon">
@@ -322,22 +328,24 @@
                          <textarea name="user-message" class="contact__textarea" placeholder="Сообщение*"></textarea>
                          <input type="checkbox" id="user-term" name="user-term" class="contact__form-term visually-hidden">
 
-                        <label for="user-term" class="contact__check-desc">Отправляя заявку Вы соглашаетесь
-                            с&nbsp;<a href="#" class="term">Политикой 
-                                конфиденциальности</a></label>
+                        <label for="user-term" name="user-term" class="contact__check-desc">Отправляя заявку Вы соглашаетесь
+                            с Политикой 
+                                конфиденциальности</label>
                         <button type="submit" class="contact__form-btn">
                             Отправить 
                             <svg class="contact__form-btn-icon">
-                            <use href="#"></use>
+                            <use href="./img/svg/icon.svg#icon-arr"></use>
                         </svg>
                         </button>
                      </form>
                     </div>
                     <div class="contact__picture">
                         <picture>
+                            <source srcset="./img/image_10_749x369.jpg 1x, ./img/image_10_749x369_x2.jpg 2x" media="(min-width: 1200px)">
                             <img src="" alt="" class="contact__img">
                         </picture>
                     </div>
+                </div>
                  </div>
              </section>
              <!--END OF CONTACT-->

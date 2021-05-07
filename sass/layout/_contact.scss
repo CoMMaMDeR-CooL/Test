@@ -1,0 +1,101 @@
+.contact {
+    display: flex;
+    &__title {
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 1.0;
+        color: #BDBDBD;
+        margin-bottom: 22px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__input {
+        width: 100%;
+        height: 46px;
+        background: #F3F3F3;
+        border: none;
+        padding-left: 42px;
+        position: relative;
+        margin-bottom: 10px;
+        &:hover,
+        &:focus {
+            outline: none;
+        }
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+    }
+    &__textarea {
+        width: 100%;
+        height: 147px;
+        background: #F3F3F3;
+        border: none;
+        resize: none;
+        padding-left: 42px;
+        padding-top: 12px;
+        margin-bottom: 22px;
+        &:hover,
+        &:focus {
+            outline: none;
+        }
+    }
+    &__check-desc {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.03em;
+        color: #333333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #212121;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+    }
+    &__form-term:checked + &__check-desc::before {
+        background: #BDBDBD;
+        background-image: url("../img/svg/chck.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        border-color: #333333;
+    }
+    &__form-btn {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.0;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 222px;
+        height: 71px;
+        padding: 24px 39px;
+        background: #333333;
+        margin-top: 21px;
+    }
+    &__form-btn-icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 12px;
+        fill:#FFFFFF
+    }
+}
